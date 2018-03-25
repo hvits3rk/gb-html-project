@@ -99,12 +99,20 @@ body {
     padding: 10px 31px;
     line-height: 13px;
     color:  #212121;
-    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3.6px;
+}
+
+.header-text a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-text a:active {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .pagination {
@@ -149,12 +157,13 @@ body {
     position: relative;
 }
 
-.item:hover .product-hover {
+.item img {
     display: block;
+    width: 100%;
 }
 
 .product-hover {
-    border: 1px solid #9c9c9c;
+    /* border: 1px solid #9c9c9c;
     background-color:  #ffffff;
     opacity: 0.9;
     width: 270px;
@@ -166,7 +175,31 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    display: none;
+    display: none; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 270px;
+    width: 270px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: .5s ease-out;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.item:hover .product-hover {
+    opacity: 0.9;
+}
+
+.item:hover .product-link {
+    animation-name: fall-down;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .product-link {
@@ -179,7 +212,19 @@ body {
     text-decoration: none;
     text-align: center;
     line-height:48px;
-    margin: 62px auto 19px;
+    animation-name: go-up;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.product-link:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-link:active {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .product-hover h3 {
@@ -188,6 +233,7 @@ body {
     font-weight: 700;
     line-height: 30px; /* Приближение из-за подстановки шрифтов */
     text-align: center;
+    cursor: default;
 }
 .product-hover p {
     color: #6c6c6c;
@@ -195,4 +241,23 @@ body {
     font-weight: 300;
     line-height: 22px; /* Приближение из-за подстановки шрифтов */
     text-align: center;
+    cursor: default;    
+}
+
+@keyframes fall-down {
+    from {
+        margin: 0px auto 19px;
+    }
+    to {
+        margin: 62px auto 19px;
+    }
+}
+
+@keyframes go-up {
+    from {
+        margin:  62px auto 19px;
+    }
+    to {
+        margin: 0px auto 19px;
+    }
 }
