@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.slider {
+    height: 800px;
+    background-image: url('img/slider-img.jpg');
+    position: relative;
+}
+
+.padding-site {
+    padding-left: 98px;
+    padding-right: 98px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    display: block;
+}
+
+.logo {
+    margin-top: 63px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-top: 57px;
+}
+
+.menu a {
+    padding: 10px 13px;
+    color:  #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #212121;
+}
+
+.menu .active-link {
+    color:  #212121;
+    font-weight: 700;
+    border-bottom: 3px solid #212121;
+}
+
+.header-text {
+    margin-top: 283px;
+}
+
+.header-text p {
+    width: 458px;
+    margin-bottom:32px;
+    color:  #6c6c6c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+}
+
+.header-text h4 {
+    color: #43a047;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 13px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 22px;
+}
+.header-text h2 {
+    color: #212121;
+    font-size: 62px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 43px;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+    letter-spacing: -3px;
+}
+.header-text a {
+    border-radius: 22.5px;
+    background-color:  #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    padding: 10px 31px;
+    line-height: 13px;
+    color:  #212121;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+}
+
+.pagination {
+    display: flex;
+    position: absolute;
+    bottom: 19px;
+    width: 1170px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color:  rgba(33, 33, 33, 0.2);
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.pagination .circle-active {
+    background-color:   #212121;
+    width: 40px;
+    height: 40px;
+}
+
+.pagination a:hover {
+    background-color: #212121;
+}
+
+.product {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 270px;
+    height: 270px;
+    position: relative;
+}
+
+.item:hover .product-hover {
+    display: block;
+}
+
+.product-hover {
+    border: 1px solid #9c9c9c;
+    background-color:  #ffffff;
+    opacity: 0.9;
+    width: 270px;
+    height: 270px;
+    padding: 0 32px;
+    position: absolute;
+    top:0;
+    left:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+}
+
+.product-link {
+    border-radius: 50%;
+    background-color:  #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 48px;
+    height: 48px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height:48px;
+    margin: 62px auto 19px;
+}
+
+.product-hover h3 {
+    color: #212121;
+    font-size: 22px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 30px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.product-hover p {
+    color: #6c6c6c;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 22px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
