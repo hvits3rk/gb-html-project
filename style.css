@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
-
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -38,15 +37,18 @@ body {
     margin-top: 63px;
 }
 
+.header-menu {
+    margin-top: 57px;
+}
+
 .menu {
     display: flex;
     list-style-type: none;
-    margin-top: 57px;
 }
 
 .menu a {
     padding: 10px 13px;
-    color:  #8c8c8c;
+    color: #8c8c8c;
     font-size: 14px;
     font-weight: 300;
     text-decoration: none;
@@ -57,7 +59,7 @@ body {
 }
 
 .menu .active-link {
-    color:  #212121;
+    color: #212121;
     font-weight: 700;
     border-bottom: 3px solid #212121;
 }
@@ -68,37 +70,39 @@ body {
 
 .header-text p {
     width: 458px;
-    margin-bottom:32px;
-    color:  #6c6c6c;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    margin-bottom: 32px;
+    color: #6c6c6c;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    line-height: 24px;
 }
 
 .header-text h4 {
     color: #43a047;
-    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-size: 18px;
     font-weight: 700;
-    line-height: 13px; /* Приближение из-за подстановки шрифтов */
+    line-height: 13px;
     text-align: left;
     margin-bottom: 22px;
 }
+
 .header-text h2 {
     color: #212121;
-    font-size: 62px; /* Приближение из-за подстановки шрифтов */
+    font-size: 62px;
     font-weight: 100;
     line-height: 43px;
     text-transform: uppercase;
     margin-bottom: 34px;
     letter-spacing: -3px;
 }
+
 .header-text a {
     border-radius: 22.5px;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     padding: 10px 31px;
     line-height: 13px;
-    color:  #212121;
+    color: #212121;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -128,14 +132,14 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background-color:  rgba(33, 33, 33, 0.2);
+    background-color: rgba(33, 33, 33, 0.2);
     border-radius: 50%;
     margin-right: 5px;
     margin-left: 5px;
 }
 
 .pagination .circle-active {
-    background-color:   #212121;
+    background-color: #212121;
     width: 40px;
     height: 40px;
 }
@@ -162,20 +166,34 @@ body {
     width: 100%;
 }
 
+.justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-menu {
+    margin-top: 120px;
+}
+
+.product-menu li a {
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: 1px solid #6c6c6c;
+    letter-spacing: -1px;
+}
+
+.explore-link {
+    padding: 10px 13px;
+    margin-top: 127px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    text-decoration: none;
+}
+
 .product-hover {
-    /* border: 1px solid #9c9c9c;
-    background-color:  #ffffff;
-    opacity: 0.9;
-    width: 270px;
-    height: 270px;
-    padding: 0 32px;
-    position: absolute;
-    top:0;
-    left:0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: none; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -204,14 +222,15 @@ body {
 
 .product-link {
     border-radius: 50%;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 48px;
     height: 48px;
+    margin: 0px auto 19px;
     display: block;
     text-decoration: none;
     text-align: center;
-    line-height:48px;
+    line-height: 48px;
     animation-name: go-up;
     animation-timing-function: ease-out;
     animation-duration: 0.5s;
@@ -229,35 +248,36 @@ body {
 
 .product-hover h3 {
     color: #212121;
-    font-size: 22px; /* Приближение из-за подстановки шрифтов */
+    font-size: 22px;
     font-weight: 700;
-    line-height: 30px; /* Приближение из-за подстановки шрифтов */
+    line-height: 30px;
     text-align: center;
     cursor: default;
 }
+
 .product-hover p {
     color: #6c6c6c;
-    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-size: 14px;
     font-weight: 300;
-    line-height: 22px; /* Приближение из-за подстановки шрифтов */
+    line-height: 22px;
     text-align: center;
-    cursor: default;    
+    cursor: default;
 }
 
 @keyframes fall-down {
     from {
-        margin: 0px auto 19px;
+        margin-top: 0px;
     }
     to {
-        margin: 62px auto 19px;
+        margin-top: 62px;
     }
 }
 
 @keyframes go-up {
     from {
-        margin:  62px auto 19px;
+        margin-top: 62px;
     }
     to {
-        margin: 0px auto 19px;
+        margin-top: 0px;
     }
 }
