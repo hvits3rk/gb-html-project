@@ -193,6 +193,10 @@ body {
     text-decoration: none;
 }
 
+.explore-link:hover {
+    color: #6c6c6c;
+}
+
 .product-hover {
     position: absolute;
     top: 0;
@@ -201,7 +205,6 @@ body {
     right: 0;
     height: 270px;
     width: 270px;
-    padding: 0 32px;
     box-sizing: border-box;
     opacity: 0;
     transition: .5s ease-out;
@@ -220,13 +223,19 @@ body {
     animation-fill-mode: forwards;
 }
 
+.item-content {
+    position: absolute;
+    padding: 0 32px;
+    top: 129px;
+}
+
 .product-link {
     border-radius: 50%;
     background-color: #ffffff;
     box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
     width: 48px;
     height: 48px;
-    margin: 0px auto 19px;
+    margin: 0px auto;
     display: block;
     text-decoration: none;
     text-align: center;
@@ -335,20 +344,35 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.text-title {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 34px;
+}
+
+.trending-container {
+    display: grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: 370px 370px 370px;
+    margin-top: 64px;
+}
+
 @keyframes fall-down {
     from {
-        margin-top: 0px;
+        top: 0px;
     }
     to {
-        margin-top: 62px;
+        top: 62px;
     }
 }
 
 @keyframes go-up {
     from {
-        margin-top: 62px;
+        top: 62px;
     }
     to {
-        margin-top: 0px;
+        top: 0px;
     }
 }
