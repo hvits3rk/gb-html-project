@@ -1,0 +1,39 @@
+.explore-link {
+    padding: 10px 13px;
+    margin-top: 7px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    text-decoration: none;
+}
+
+.explore-link:hover {
+    color: #6c6c6c;
+}
+
+.button {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    padding: 10px 31px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 13px;
+    letter-spacing: 3.6px;
+}
+
+.button.button-round {
+    border-radius: 22.5px;
+}
+
+.button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:active {
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+}
