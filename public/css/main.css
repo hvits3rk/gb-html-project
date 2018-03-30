@@ -3,6 +3,7 @@
 @import 'elements.css';
 @import 'components.css';
 @import 'hover.css';
+@import 'color.css';
 
 * {
     margin: 0;

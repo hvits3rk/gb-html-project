@@ -11,14 +11,12 @@
 .slider-text p {
     width: 458px;
     margin-bottom: 32px;
-    color: #6c6c6c;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
 }
 
 .slider-text h4 {
-    color: #43a047;
     font-size: 18px;
     font-weight: 700;
     line-height: 13px;
@@ -27,7 +25,6 @@
 }
 
 .slider-text h2 {
-    color: #212121;
     font-size: 62px;
     font-weight: 100;
     line-height: 43px;
