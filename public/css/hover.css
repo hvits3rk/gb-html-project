@@ -6,12 +6,20 @@
     opacity: 0.9;
 }
 
+.dim:active {
+    opacity: 1;
+}
+
 .grow {
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 
 .grow:hover {
     transform: scale(1.02);
+}
+
+.grow:active {
+    transform: scale(1.01);
 }
 
 .pointer {
